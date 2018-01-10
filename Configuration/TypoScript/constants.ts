@@ -10,6 +10,6 @@ plugin.tx_carlist_listinformation {
     }
     persistence {
         # cat=plugin.tx_carlist_listinformation//a; type=string; label=Default storage PID
-        storagePid = 7
+        storagePid =
     }
 }

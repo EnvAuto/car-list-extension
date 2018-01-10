@@ -178,6 +178,31 @@ class ListCarTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
+    public function getListTypeReturnsInitialValueForInt()
+    {
+        self::assertSame(
+            0,
+            $this->subject->getListType()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setListTypeForIntSetsListType()
+    {
+        $this->subject->setListType(12);
+
+        self::assertAttributeEquals(
+            12,
+            'listType',
+            $this->subject
+        );
+    }
+
+    /**
+     * @test
+     */
     public function getManufacturerReturnsInitialValueForListManufacturer()
     {
         self::assertEquals(

@@ -53,9 +53,7 @@ overwriteSettings:
   Resources:
     Private:
       #Language: merge
-      Templates:
-		List.html: keep
-        Show.html: keep
+      Templates: keep
 
   user_extension.svg: keep
 

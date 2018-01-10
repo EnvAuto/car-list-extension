@@ -141,12 +141,10 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:car_list/Resources/Private/Language/locallang_db.xlf:tx_carlist_domain_model_listmanufacturer.link',
             'config' => [
-                'type' => 'text',
-                'cols' => 40,
-                'rows' => 15,
-                'eval' => 'trim',
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
             ],
-            'defaultExtras' => 'richtext:rte_transform'
         ],
         'logo' => [
             'exclude' => true,

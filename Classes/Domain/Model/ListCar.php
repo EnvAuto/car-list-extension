@@ -78,6 +78,14 @@ class ListCar extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $class = null;
 
     /**
+     * listType
+     *
+     * @var int
+     * @validate NotEmpty
+     */
+    protected $listType = 0;
+
+    /**
      * Returns the place
      *
      * @return int $place
@@ -243,5 +251,26 @@ class ListCar extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setClass(\Envauto\CarList\Domain\Model\ListClass $class)
     {
         $this->class = $class;
+    }
+
+    /**
+     * Returns the listType
+     *
+     * @return int $listType
+     */
+    public function getListType()
+    {
+        return $this->listType;
+    }
+
+    /**
+     * Sets the listType
+     *
+     * @param int $listType
+     * @return void
+     */
+    public function setListType($listType)
+    {
+        $this->listType = $listType;
     }
 }

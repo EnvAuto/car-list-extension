@@ -12,6 +12,7 @@ CREATE TABLE tx_carlist_domain_model_listcar (
 	description text,
 	mpg double(11,2) DEFAULT '0.00' NOT NULL,
 	image int(11) unsigned NOT NULL default '0',
+	list_type int(11) DEFAULT '0' NOT NULL,
 	manufacturer int(11) unsigned DEFAULT '0',
 	class int(11) unsigned DEFAULT '0',
 
@@ -57,7 +58,7 @@ CREATE TABLE tx_carlist_domain_model_listmanufacturer (
 	name varchar(255) DEFAULT '' NOT NULL,
 	country varchar(255) DEFAULT '' NOT NULL,
 	description text,
-	link text,
+	link varchar(255) DEFAULT '' NOT NULL,
 	logo int(11) unsigned NOT NULL default '0',
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,

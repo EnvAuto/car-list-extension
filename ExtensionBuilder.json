@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    286,
-                    96
+                    297,
+                    100
                 ]
             },
             "name": "New Model Object",
@@ -92,6 +92,16 @@
                             "propertyName": "image",
                             "propertyType": "Image",
                             "uid": "1218629947740"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "listType",
+                            "propertyType": "Select",
+                            "uid": "499879309387"
                         }
                     ]
                 },
@@ -193,7 +203,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
                             "propertyName": "link",
-                            "propertyType": "RichText",
+                            "propertyType": "String",
                             "uid": "171600911754"
                         },
                         {
@@ -344,8 +354,8 @@
         }
     ],
     "log": {
-        "last_modified": "2018-01-09 11:30",
+        "last_modified": "2018-01-10 10:32",
         "extension_builder_version": "8.7.0",
-        "be_user": "Root Admin Account (1)"
+        "be_user": "Ivan Iakimenko (4)"
     }
 }

@@ -17,14 +17,14 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'place,model,year,description,mpg,image,manufacturer,class',
+        'searchFields' => 'place,model,year,description,mpg,image,list_type,manufacturer,class',
         'iconfile' => 'EXT:car_list/Resources/Public/Icons/tx_carlist_domain_model_listcar.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, place, model, year, description, mpg, image, manufacturer, class',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, place, model, year, description, mpg, image, list_type, manufacturer, class',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, place, model, year, description, mpg, image, manufacturer, class, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, place, model, year, description, mpg, image, list_type, manufacturer, class, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -201,6 +201,21 @@ return [
                 ],
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             ),
+        ],
+        'list_type' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:car_list/Resources/Private/Language/locallang_db.xlf:tx_carlist_domain_model_listcar.list_type',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['Best Cars List', 0],
+					['Worst Cars List', 1],
+                ],
+                'size' => 1,
+                'maxitems' => 1,
+                'eval' => 'required'
+            ],
         ],
         'manufacturer' => [
             'exclude' => false,
