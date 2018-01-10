@@ -33,7 +33,15 @@ class ListCarController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
     public function listAction()
     {
         $listCars = $this->listCarRepository->findAll();
-        $this->view->assign('listCars', $listCars);
+        //Get the current page Title
+        $arr  = $GLOBALS['TSFE']->rootLine;
+        $titlArr = array_shift(array_values( $arr ));
+        $currentTitle = $titlArr['title'];
+        echo $currentTitle;
+        if(stristr($currentTitle, 'worst') !== false ){
+            $this->view->assign('listCars', $listCars);
+        }
+
     }
 
     /**
