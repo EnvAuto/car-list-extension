@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="carshow_header">
+    <f:if condition="{listCar.image}">
+        <f:then>
+            <f:image image="{listCar.image}" class="carshow_image"/>
+        </f:then>
+        <f:else>
+
+        </f:else>
+    </f:if>
+    <div class="carshow_place">{listCar.place}</div>
+</div>
+<h1>More about the {listCar.manufacturer.name} {listCar.model}</h1>
+<div class="carshow_details">
+    <h4>Year released: {listCar.year}</h4>
+    <h4>Mileage: {listCar.mpg} Miles Per Gallon</h4>
+</div>
+<div class="carshow_text">
+    <f:format.html>{listCar.description}</f:format.html>
+</div>
+</html>

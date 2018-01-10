@@ -13,12 +13,12 @@ Show.html: keep
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-    <f:render partial="ListCar/Properties" arguments="{listCar:listCar}"/>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+    <f:render partial="ListCar/SingleView" arguments="{listCar:listCar}"/>
+    <button class="btn carshow_btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
             aria-expanded="false" aria-controls="collapseExample">
         More about {listCar.manufacturer.name}
     </button>
-    <div class="collapse carshow_content" id="collapseExample">
+    <div class="collapse carshow_manufacturer_content" id="collapseExample">
         <f:image image="{listCar.manufacturer.logo}" class="carshow_manufacturer_logo"/>
         <div class="carshow_manufacturer_info">
             <h3>{listCar.manufacturer.name}</h3>
@@ -27,6 +27,6 @@ Otherwise your changes will be overwritten the next time you save the extension 
         </div>
         <f:format.html>{listCar.manufacturer.description}</f:format.html>
     </div>
-    <f:link.action class="btn btn-primary" action="list">Back to list</f:link.action>
+    <f:link.action class="btn carshow_btn btn-primary" action="list">Back to list</f:link.action>
 </f:section>
 </html>
