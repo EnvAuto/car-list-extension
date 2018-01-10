@@ -1,0 +1,63 @@
+.carlist {
+  display: inline-grid;
+}
+
+.carlist h1{
+  margin-bottom: 0.67em;
+}
+
+.carlist_entry {
+  margin: 0.5em;
+}
+
+.carlist_image {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+.carlist_place {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+  background-color: @brand-primary;
+  color: white;
+  float: left;
+}
+
+.carlist_info {
+  float: left;
+  margin: 1em 2em;
+  color: @brand-dark-gray;
+  font-size: x-small;
+}
+
+@media only screen and (min-width: 460px) {
+  .carlist_image {
+    height: 12em;
+    width: 21.33em;
+  }
+  .carlist_place {
+    width: 1.3em;
+    height: 6em;
+    font-size: 2em;
+  }
+  .carlist_info{
+    font-size: small;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .carlist_image {
+    height: 15em;
+    width: 26.67em;
+  }
+  .carlist_place {
+    width: 2em;
+    height: 5em;
+    font-size: 3em;
+  }
+  .carlist_info{
+    font-size: inherit;
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "envauto/car-list",
+    "type": "typo3-cms-extension",
+    "description": "A car list that allows content creators to handpick the best and worst cars and provide supporting media to their listing.",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Envauto\\CarList\\": "Classes"
+        }
+    }
+}

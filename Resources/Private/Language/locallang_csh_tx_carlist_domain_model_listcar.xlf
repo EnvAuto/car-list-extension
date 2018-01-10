@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-09T11:30:06Z" product-name="car_list">
+		<header/>
+		<body>
+			<trans-unit id="place.description">
+				<source>The order in which the car will appear in the list</source>
+			</trans-unit>
+			<trans-unit id="model.description">
+				<source>The car&#039;s model</source>
+			</trans-unit>
+			<trans-unit id="year.description">
+				<source>The year the car was built</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>Content creators add their thoughts on the car model</source>
+			</trans-unit>
+			<trans-unit id="mpg.description">
+				<source>The car&#039;s miles per gallon EPA rating</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="manufacturer.description">
+				<source>manufacturer</source>
+			</trans-unit>
+			<trans-unit id="class.description">
+				<source>class</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

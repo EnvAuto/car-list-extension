@@ -1,0 +1,42 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+<div class="carlist" >
+	<h1>The Top 10 cars as chosen by our editors</h1>
+
+	<f:for each="{listCars}" as="listCar">
+		<div class="carlist_entry"><f:link.action action="show" arguments="{listCar : listCar}">
+			<div class="carlist_place">{listCar.place}</div>
+			<f:if condition="{listCar.image}">
+				<f:then>
+					<f:image image="{listCar.image}" class="carlist_image" />
+				</f:then>
+				<f:else>
+
+				</f:else>
+			</f:if>
+			<div class="carlist_info">
+				<h2>{listCar.manufacturer.name} {listCar.model}</h2>
+				<h4>{listCar.year}</h4>
+				<h4>MPG: {listCar.mpg}</h4>
+			</div>
+
+		</f:link.action></div>
+	</f:for>
+</div>
+
+</f:section>
+</html>

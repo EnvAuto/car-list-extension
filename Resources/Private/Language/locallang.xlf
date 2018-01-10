@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-09T11:30:06Z" product-name="car_list">
+		<header/>
+		<body>
+			<trans-unit id="tx_carlist_domain_model_listcar">
+				<source>List Car</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listcar.place">
+				<source>Place</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listcar.model">
+				<source>Model</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listcar.year">
+				<source>Year</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listcar.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listcar.mpg">
+				<source>Mpg</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listcar.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listcar.manufacturer">
+				<source>Manufacturer</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listcar.class">
+				<source>Class</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listmanufacturer">
+				<source>List Manufacturer</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listmanufacturer.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listmanufacturer.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listmanufacturer.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listmanufacturer.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listmanufacturer.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listclass">
+				<source>List Class</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listclass.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listclass.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_carlist_domain_model_listclass.image">
+				<source>Image</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
