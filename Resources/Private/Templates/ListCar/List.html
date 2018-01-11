@@ -15,8 +15,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <f:section name="main">
 
 <div class="carlist" >
-	<h1>The Top 10 cars as chosen by our editors</h1>
-
+	
 	<f:for each="{listCars}" as="listCar">
 		<div class="carlist_entry"><f:link.action action="show" arguments="{listCar : listCar}">
 			<div class="carlist_place">{listCar.place}</div>
